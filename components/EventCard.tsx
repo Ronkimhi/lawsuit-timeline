@@ -63,7 +63,7 @@ export default function EventCard({ event, isSelected, hasEvidence, onClick }: P
           className="text-sm font-medium leading-snug"
           style={{ color: event.importance === "critical" ? "#f8f9fb" : "var(--text-primary)" }}
         >
-          {event.title}
+          {event.titleHe ?? event.title}
         </div>
 
         {isSelected && (

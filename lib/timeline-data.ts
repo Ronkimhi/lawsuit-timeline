@@ -74,6 +74,7 @@ export const events: TimelineEvent[] = [
     date: "2019-01-10",
     dateDisplay: "Jan 10, 2019",
     title: "Attorney Kagan's Formal Demand Letter — Delivery, Storage, Defects",
+    titleHe: "מכתב דרישה רשמי של עו\"ד קגן — מסירה, מחסן, ליקויים",
     detail:
       "First formal legal communication. Kagan formally demands: (1) delivery date confirmation, (2) מחסן 10 — disputed from day one, (3) resolution of documented defects. Mortgage of ₪750,000 registered Jan 22, 2019 (Discount Bank).",
     category: "pre-case",
@@ -86,6 +87,7 @@ export const events: TimelineEvent[] = [
     date: "2019-01-23",
     dateDisplay: "Jan 23, 2019",
     title: "ממן's 8-Point Response to Kagan Letter",
+    titleHe: "תגובת ממן ב-8 נקודות למכתב קגן",
     detail:
       "ממן responds on behalf of שרבט 38 with an 8-point letter deflecting all demands. First documented instance of ממן acting as Sharbat's legal enforcer — before any litigation.",
     category: "pre-case",
@@ -98,6 +100,7 @@ export const events: TimelineEvent[] = [
     date: "2019-02-04",
     dateDisplay: "Feb 4 – Mar 25, 2019",
     title: "Form 50 Delay — ממן Stalls Tax Clearance for ~4 Weeks",
+    titleHe: "עיכוב טופס 50 — ממן מעכב אישור מס כ-4 שבועות",
     detail:
       "Ron repeatedly requests ממן to sign Form 50 (tax clearance) required by Bank Leumi. ממן responds with 'will check tomorrow,' 'in process,' then goes silent. Form 50 finally received Feb 25, 2019 — 4 weeks of delay caused by ממן. Mortgage funds disbursed March 26, 2019.",
     category: "pre-case",
@@ -136,6 +139,7 @@ export const events: TimelineEvent[] = [
     date: "2019-06-13",
     dateDisplay: "Jun 13, 2019",
     title: "First Defect Inspection — Report 1729 (Architect נירה גורוביץ')",
+    titleHe: "בדיקת ליקויים ראשונה — דוח 1729 (אדריכלית נירה גורוביץ')",
     detail:
       "Pre-possession inspection: paint/plaster, tiling, aluminum, plumbing (missing sprinklers), electrical defects all documented. Report provided to שרבט. No remedial action taken.",
     category: "pre-case",
@@ -161,6 +165,7 @@ export const events: TimelineEvent[] = [
     date: "2020-02-03",
     dateDisplay: "Feb 3, 2020",
     title: "₪167,000 Court Deposit (עיקול עצמי — Case 1 Opening)",
+    titleHe: "פיקדון ₪167,000 בבית משפט (עיקול עצמי — פתיחת תיק 1)",
     detail:
       "Ron deposits ₪167,000 into court escrow as security (עיקול עצמי) to open Case 1. Additional deposits follow: ₪20,000 (Mar 2, 2020), ₪17,000 and ₪67,000 (Jan 27, 2021). Total deposited: ₪271,000.",
     category: "case1",
@@ -199,6 +204,7 @@ export const events: TimelineEvent[] = [
     date: "2020-12-08",
     dateDisplay: "Dec 8, 2020",
     title: "Gaya Engineering Inspection — Apartment Not Connected to Electricity",
+    titleHe: "בדיקת גאיה הנדסה — הדירה לא מחוברת לחשמל",
     detail:
       "Two days after the ₪179K payment to ממן. Gaya Engineering inspects Apt 11: electrical section not properly completed; apartment not connected to electricity. The ₪30,000 designated for electricity connection has already gone to ממן's account. It did not reach the apartment.",
     category: "electricity",
@@ -237,6 +243,7 @@ export const events: TimelineEvent[] = [
     date: "2021-05-27",
     dateDisplay: "May 27, 2021",
     title: "Court Seizure Registered on SHBN's Tabu Note (שטר 17267/2021/1)",
+    titleHe: "עיקול בית משפט נרשם בטאבו — שטר 17267/2021/1",
     detail:
       "A court seizure is registered on the Tabu note for the building — confirms active litigation. As of this date, Ron holds only הערת אזהרה (warning note, registered Oct 2018). Full Tabu ownership (תת-חלקה) has still not been registered in Ron's name — 2.5 years after the promised delivery date.",
     category: "case1",
@@ -275,6 +282,7 @@ export const events: TimelineEvent[] = [
     date: "2025-01-01",
     dateDisplay: "Jan 2025",
     title: "ע.ק Expert Report — Active Moisture in 4 Zones, Sub-floor Failure",
+    titleHe: "חוות דעת מומחה ע.ק — רטיבות פעילה ב-4 אזורים, כשל ריצוף",
     detail:
       "ע.ק איתור נזילות expert report confirms ongoing moisture damage in Apt 11: 4 active moisture zones, sub-floor waterproofing failure in Apt 14 causing ceiling damage in Apt 11. שרבט knew about moisture since January 2019 (admitted in Steinert v. Sharbat). The damage is ongoing and unresolved as of January 2025.",
     category: "case2",
@@ -300,6 +308,7 @@ export const events: TimelineEvent[] = [
     date: "2024-11-14",
     dateDisplay: "Nov 14, 2024",
     title: "Apartment Sale to Ben-Hamo — 2 Days After Verdict",
+    titleHe: "מכירת הדירה לבן-המו — יומיים אחרי פסק הדין",
     detail:
       "Ron sells Apt 11 to Ben-Hamo buyers, two days after the Case 1 verdict. ממן holds a power of attorney from שרבט that extends to Tabu registrations — he remains a gatekeeper over the property transfer. שרבט simultaneously says he will not cooperate with the sale until accounting is resolved.",
     category: "verdict",
@@ -312,6 +321,7 @@ export const events: TimelineEvent[] = [
     date: "2024-11-17",
     dateDisplay: "Nov 17, 2024",
     title: "ממן Signs הערת אזהרה via POA — Post-Verdict Gatekeeper Role",
+    titleHe: "ממן חותם על הערת אזהרה באמצעות יפוי כוח — שומר סף לאחר פסק הדין",
     detail:
       "Three days after the apartment sale, Nave Law (מורין סוטיל) asks ממן to sign the הערת אזהרה registration form using his power of attorney from שרבט, to facilitate Tabu registration for the Ben-Hamo buyers. ממן held the power of attorney — confirming his ongoing operational role even after Case 1 closed.",
     category: "verdict",
@@ -324,6 +334,7 @@ export const events: TimelineEvent[] = [
     date: "2024-11-20",
     dateDisplay: "Nov 20, 2024",
     title: "שרבט's ₪186,000 Counter-Claim — Will Block Sale Until Resolved",
+    titleHe: "תביעה נגדית של שרבט ₪186,000 — יחסום את המכירה עד הסדרה",
     detail:
       "שרבט claims Ron owes HIM ₪186,000 with 'exceptional interest' (רבית חריגה). Spreadsheet: 'התחשבנות רון קמחי (2) (6) (1).xlsx.' His position: will not cooperate with Tabu registration for the apartment sale until this counter-accounting is resolved. BH Law (פלג) prepares a formal response (Dec 29, 2024).",
     category: "verdict",
@@ -349,6 +360,7 @@ export const events: TimelineEvent[] = [
     date: "2025-06-03",
     dateDisplay: "Jun 3, 2025",
     title: "Defense Files כתב הגנה in Case 2 (ממן Representing שרבט)",
+    titleHe: "ממן מגיש כתב הגנה בתביעה 2 — בשמו של שרבט",
     detail:
       "ממן files the Case 2 defense on behalf of שרבט. ממן — the attorney whose conduct is the subject of Case 2 — is simultaneously writing the defense. This reinforces the conflict-of-interest argument.",
     category: "case2",
@@ -361,6 +373,7 @@ export const events: TimelineEvent[] = [
     date: "2025-06-24",
     dateDisplay: "Jun 24, 2025",
     title: "First קדם משפט — Judge יעל מרמור דומב",
+    titleHe: "קדם משפט ראשון — שופטת יעל מרמור דומב",
     detail:
       "First pre-trial hearing in Case 2. Judge מרמור דומב presides. Nave Law leads. Further hearings: Dec 1-2, 2025 (motion to accelerate). May 14, 2026 (קדם משפט — procedural only, postponed to Oct 4, 2026).",
     category: "case2",
