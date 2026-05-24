@@ -9,6 +9,7 @@ export interface Evidence {
   hebrewQuote?: string;
   notes?: string;
   fileUrl?: string;
+  pageRef?: string;
 }
 
 export const evidence: Evidence[] = [
@@ -19,7 +20,8 @@ export const evidence: Evidence[] = [
     source: "נספח 3, עמ' 129-130 — נספח הגנה שהגיש שרבט עצמו בתיק 1, תחת שבועה (דצמבר 2021)",
     strength: "STRONG",
     notes: "ראיה בעלת עדיפות עליונה. הוגשה על ידי שרבט עצמו. ₪30,000 עבור חשמל הועברו לממן; לרון לא היה חשמל עד נובמבר 2021 לכל הפחות.",
-    fileUrl: "/docs/nasah-3.pdf",
+    fileUrl: "/docs/nasah-3.pdf#page=1",
+    pageRef: "עמ' 1 — שער נספח הגנה (תשלום ₪179K מתועד בחבילת עמ' 129-130)",
   },
   {
     id: "electricity-no-connection",
@@ -30,7 +32,8 @@ export const evidence: Evidence[] = [
     hebrewQuote:
       'Nov 14: "אני צריך בבקשה מספר הזמנה או אוביייקט כדי לפתוח חוזה מול חברת חשמל"\nNov 18: "דיברנו עם חברת חשמל, הם מבקשים מכתב שאומר שהדירה נמסרה ושאתם לשרים לחבר אותה לחשמל עם חותמת החברה של sbh"',
     notes: "ציטוטים מילה במילה מהנספח הסרוק. הוגש על ידי שרבט עצמו — הוא אינו יכול להכחיש ראיה זו.",
-    fileUrl: "/docs/nasah-15.pdf",
+    fileUrl: "/docs/nasah-15.pdf#page=1",
+    pageRef: "עמ' 1 — בקשת רון 14.11.21; עמ' 4 — 18.11.21: דרישת מכתב הרשאה מ-sbh",
   },
   {
     id: "goldenberg-salary",
@@ -39,7 +42,8 @@ export const evidence: Evidence[] = [
     source: "נספח 18, עמ' 42-43 + גיליון כספי ת\"א 60392-01-20, חבילה עמ' 165 — שתי הגשות נפרדות תחת שבועה",
     strength: "STRONG",
     notes: "שרבט הגיש את מכתב גולדנברג כראיה מ'עד עצמאי'. העברת המשכורת מבטלת טענה זו. מכתבו של גולדנברג עצמו מונה 3 פריטים שלא הושלמו.",
-    fileUrl: "/docs/nasah-18.pdf",
+    fileUrl: "/docs/nasah-18.pdf#page=3",
+    pageRef: "עמ' 3 — טבלת הוצאות: 'רוברט גולדנברג — ניהול אתר יגאל אלון — ₪157,965'",
   },
   {
     id: "maman-victor-levi",
@@ -50,7 +54,8 @@ export const evidence: Evidence[] = [
     hebrewQuote:
       'ת"א 60392-01-20 פרה. 18: "פנתה התובעת לח"מ ושכרה את שירותיו וביום 4.8.19 שלח הח"מ לתובעת מכתב"',
     notes: "שני מסמכים נפרדים תחת שבועה מאשרים את אותו המכתב מ-4.8.2019. זוהי אחת מ-4 ראיות העוגן לבקשת קבילות הנספחים.",
-    fileUrl: "/docs/nasah-18.pdf",
+    fileUrl: "/docs/nasah-18.pdf#page=4",
+    pageRef: "עמ' 4 — פרה. 18: 'ביום 4.8.19 שלח הח\"מ מכתב' — ממן חתום",
   },
   {
     id: "maman-enforcement-role",
@@ -59,7 +64,8 @@ export const evidence: Evidence[] = [
     source: "נספח 18 — כתב תביעה מתוקן ת\"א 60392-01-20, חבילה עמ' 163-166",
     strength: "STRONG",
     notes: "ממן ניהל במקביל: תיק 1 כנגד רון, תביעת התשתיות כנגד יגאל אלון נישה, וקיבל ₪179,000 מכספי הבניין. שלושה תפקידים במקביל = ניגוד עניינים.",
-    fileUrl: "/docs/nasah-18.pdf",
+    fileUrl: "/docs/nasah-18.pdf#page=1",
+    pageRef: "עמ' 1 — כותרת ת\"א 60392-01-20: ממן חתום כב\"כ שרבט נגד יגאל אלון נישה",
   },
   {
     id: "maman-mirror-letter-ev",
@@ -68,7 +74,8 @@ export const evidence: Evidence[] = [
     source: "נספח 13 (נספחי הגנה) + ארכיון דוא\"ל",
     strength: "STRONG",
     notes: "הרצף: 6.12 (קבלת ₪179,000) ← 18.1 (מכתב מירור). ממן החזיק כספי בניין ואיים על הקונה בו זמנית.",
-    fileUrl: "/docs/nasah-13.pdf",
+    fileUrl: "/docs/nasah-13.pdf#page=1",
+    pageRef: "עמ' 1 — מכתב מלא: נאור יאיר ממן אל עו\"ד פלג שחם-איילון, 18.1.2021 (דף יחיד)",
   },
   {
     id: "delivery-delay",
@@ -77,7 +84,8 @@ export const evidence: Evidence[] = [
     source: "חוזה רכישה סעיף 8.1 (Sale-Documents/Purchase-Agreement/) + פסק דין תיק 1, 26.10.2024",
     strength: "STRONG",
     notes: "אושר בפסק הדין של תיק 1 (21 חודשים + 28 ימים לפי חישוב בית המשפט מ-1.3.2019).",
-    fileUrl: "/docs/nasah-10.pdf",
+    fileUrl: "/docs/nasah-10.pdf#page=1",
+    pageRef: "עמ' 1 — הסכם מכר 14.10.2018 (מועד מסירה: סעיף 8.1 — 1.3.2019)",
   },
   {
     id: "storage-wrong-unit",
@@ -86,7 +94,8 @@ export const evidence: Evidence[] = [
     source: "חוזה רכישה 14.10.2018 + מחסן - לפני השינוי.jpeg (Sale-Documents/Purchase-Agreement/) + מכתב קגן ינואר 2019 סעיף 2 + אישור רון 24.5.2026",
     strength: "STRONG",
     notes: "זוהי מסירת נכס שגוי, לא מסירה מאוחרת. שרבט אינו יכול לטעון כי מילא את חובת המחסן על ידי מסירת יחידה שונה.",
-    fileUrl: "/docs/nasah-10.pdf",
+    fileUrl: "/docs/nasah-10.pdf#page=2",
+    pageRef: "עמ' 2 — סעיף 1.4: הגדרת 'הדירה' — 'מחסן מסופל מספר 10'",
   },
   {
     id: "parking-discrepancy",
@@ -95,7 +104,8 @@ export const evidence: Evidence[] = [
     source: "טבלת הקצאת קגן 2017 + חוזה רכישה 2018 (נספחים ג'-ד')",
     strength: "DOCUMENTARY",
     notes: "עדיפות נמוכה ביחס לסכסוך המחסן. מגבלות מתקן הכפול עלולות לפגוע בשימושיות ובגישת חירום.",
-    fileUrl: "/docs/nasah-10.pdf",
+    fileUrl: "/docs/nasah-10.pdf#page=2",
+    pageRef: "עמ' 2 — סעיף 1.4: 'חניה מסופל מספר 12 (גובה מרבי 1.8 מ\\', משקל מרבי 2 טון)'",
   },
   {
     id: "tabu-gap",
@@ -104,7 +114,8 @@ export const evidence: Evidence[] = [
     source: "נסח טאבו ב-02-Attachments/Sale-Documents/",
     strength: "DOCUMENTARY",
     notes: "שאלה 7 (תאריך רישום מדויק) ממתינה לאימות מנסח הטאבו.",
-    fileUrl: "/docs/tabu.pdf",
+    fileUrl: "/docs/tabu.pdf#page=1",
+    pageRef: "עמ' 1 — נסח טאבו 30.8.2021: גוש 6532, חלקה 230, תת-חלקה 28 — ללא בעלות מלאה על שם קמחי",
   },
   {
     id: "moisture-damage",
@@ -113,7 +124,8 @@ export const evidence: Evidence[] = [
     source: "Expert-Reports/ע.ק איתור נזילות - חוות דעת מומחה.pdf + Court-Filings/דיון הוכחות שטיינר נגד שרבט 19.9.21.pdf",
     strength: "STRONG",
     notes: "שטיינר נ. שרבט (ת\"א 15343-01-20) הוא תיק מקביל באותו הבניין בפני אותו מחוז שיפוט.",
-    fileUrl: "/docs/moisture-expert.pdf",
+    fileUrl: "/docs/moisture-expert.pdf#page=4",
+    pageRef: "עמ' 4 — ממצאים: 4 אזורי רטיבות + תמונות; עמ' 5 — המלצות לתיקון",
   },
   {
     id: "water-march-2019",
@@ -123,7 +135,8 @@ export const evidence: Evidence[] = [
     strength: "STRONG",
     hebrewQuote: 'פרה. 13: "...חיבור הבניין למים הושלם בחודש מרץ 2019..."',
     notes: "הגשת בית משפט של שרבט עצמו מאשרת כי הבניין לא היה מוכן מבחינת תשתית במועד המסירה המובטח.",
-    fileUrl: "/docs/nasah-18.pdf",
+    fileUrl: "/docs/nasah-18.pdf#page=2",
+    pageRef: "עמ' 2 — פרה. 13: 'חיבור הבניין למים הושלם בחודש מרץ 2019'",
   },
   {
     id: "ta-60392-01-20",
@@ -132,7 +145,8 @@ export const evidence: Evidence[] = [
     source: "נספח 18 — כתב תביעה מתוקן ת\"א 60392-01-20, חבילה עמ' 163-166 (Defense-Exhibits-Case1/)",
     strength: "STRONG",
     notes: "הגשה זו התגלתה בתוך נספחי ההגנה של שרבט עצמו בתיק 1 — הודאת בעל דין.",
-    fileUrl: "/docs/nasah-18.pdf",
+    fileUrl: "/docs/nasah-18.pdf#page=1",
+    pageRef: "עמ' 1 — כותרת ת\"א 60392-01-20: שרבט 38 (ח.פ. 514458439) נגד יגאל אלון נישה, ₪375,000",
   },
   {
     id: "deposit-ledger",
@@ -141,7 +155,8 @@ export const evidence: Evidence[] = [
     source: "שרשורי פיקדון תיק 1 (category: case1-deposits) + פסק דין 26.10.2024",
     strength: "STRONG",
     notes: "תביעת הנגד של שרבט ב-₪186,000 מנסה לספוג עודף זה ולתבוע סכומים נוספים.",
-    fileUrl: "/docs/psak-din.pdf",
+    fileUrl: "/docs/psak-din.pdf#page=17",
+    pageRef: "עמ' 17-18 — פרה. 61-62: תשלום מתוך פיקדונות בית המשפט + החזר הפרש",
   },
   {
     id: "verdict-amounts",
@@ -150,6 +165,7 @@ export const evidence: Evidence[] = [
     source: "פסק דין 26.10.2024 — 02-Attachments/PDFs/2024-10-28_תאודור-קמחי - שרבט - פסק דין 26.10.2024.pdf",
     strength: "STRONG",
     notes: "תיק 1 נסגר. מספרים אלה סופיים.",
-    fileUrl: "/docs/psak-din.pdf",
+    fileUrl: "/docs/psak-din.pdf#page=17",
+    pageRef: "עמ' 17 — פרה. 61: ₪223,413 פיצוי (סעיף א) + ₪20,000 שכ\"ט (סעיף ג), חתימת שופטת עמ' 18",
   },
 ];
