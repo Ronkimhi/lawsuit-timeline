@@ -50,7 +50,7 @@ export const events: TimelineEvent[] = [
     title: "Attorney Kagan's Allocation Table — Storage Column for Apt 11: BLANK",
     titleHe: "טבלת הקצאה של עו\"ד קגן — עמודת מחסן לדירה 11: ריק",
     detail:
-      "Pre-sale allocation table prepared by attorney Ronen Kagan. The column for storage unit assigned to Apt 11 was left blank — no storage unit allocated at this stage.",
+      "טבלת הקצאה שהכין עו\"ד רונן קגן לפני המכירה. עמודת יחידת האחסנה לדירה 11 נותרה ריקה — לא הוקצתה יחידת אחסנה בשלב זה.",
     category: "pre-contract",
     importance: "high",
     evidenceIds: ["storage-wrong-unit"],
@@ -63,7 +63,7 @@ export const events: TimelineEvent[] = [
     title: "Purchase Contract Signed — Apt 11, מחסן 10 Assigned Explicitly",
     titleHe: "חוזה רכישה נחתם — דירה 11, מחסן מספר 10",
     detail:
-      "Ron and Stav sign the purchase agreement for Apt 11. The contract explicitly assigns מחסן מספר 10 (storage unit 10) — contradicting the 2017 Kagan blank. Parking assigned as חניה 12. Contractual delivery date: March 1, 2019.",
+      "רון וסתיו חותמים על הסכם הרכישה לדירה 11. החוזה מציין מפורשות מחסן מספר 10 — בסתירה לריק בטבלת קגן 2017. חניה מוקצית: חניה 12. מועד מסירה חוזי: 1.3.2019.",
     category: "pre-contract",
     importance: "critical",
     evidenceIds: ["delivery-delay", "storage-wrong-unit", "parking-discrepancy"],
@@ -76,7 +76,7 @@ export const events: TimelineEvent[] = [
     title: "Attorney Kagan's Formal Demand Letter — Delivery, Storage, Defects",
     titleHe: "מכתב דרישה רשמי של עו\"ד קגן — מסירה, מחסן, ליקויים",
     detail:
-      "First formal legal communication. Kagan formally demands: (1) delivery date confirmation, (2) מחסן 10 — disputed from day one, (3) resolution of documented defects. Mortgage of ₪750,000 registered Jan 22, 2019 (Discount Bank).",
+      "התקשורת המשפטית הרשמית הראשונה. קגן דורש רשמית: (1) אישור מועד מסירה, (2) מחסן 10 — שנוי במחלוקת מהיום הראשון, (3) פתרון ליקויים מתועדים. משכנתא ₪750,000 נרשמה ב-22.1.2019 (בנק דיסקונט).",
     category: "pre-case",
     importance: "high",
     evidenceIds: ["storage-wrong-unit"],
@@ -89,7 +89,7 @@ export const events: TimelineEvent[] = [
     title: "ממן's 8-Point Response to Kagan Letter",
     titleHe: "תגובת ממן ב-8 נקודות למכתב קגן",
     detail:
-      "ממן responds on behalf of שרבט 38 with an 8-point letter deflecting all demands. First documented instance of ממן acting as Sharbat's legal enforcer — before any litigation.",
+      "ממן משיב בשם שרבט 38 במכתב בן 8 נקודות המסיט את כל הדרישות. תיעוד ראשון של ממן כסוכן אכיפה משפטי של שרבט — לפני כל הליך משפטי.",
     category: "pre-case",
     importance: "high",
     evidenceIds: ["maman-enforcement-role"],
@@ -102,7 +102,7 @@ export const events: TimelineEvent[] = [
     title: "Form 50 Delay — ממן Stalls Tax Clearance for ~4 Weeks",
     titleHe: "עיכוב טופס 50 — ממן מעכב אישור מס כ-4 שבועות",
     detail:
-      "Ron repeatedly requests ממן to sign Form 50 (tax clearance) required by Bank Leumi. ממן responds with 'will check tomorrow,' 'in process,' then goes silent. Form 50 finally received Feb 25, 2019 — 4 weeks of delay caused by ממן. Mortgage funds disbursed March 26, 2019.",
+      "רון מבקש שוב ושוב מממן לחתום על טופס 50 (אישור מס) הנדרש על ידי בנק לאומי. ממן משיב 'אבדוק מחר', 'בתהליך', ולאחר מכן שותק. טופס 50 התקבל לבסוף ב-25.2.2019 — 4 שבועות עיכוב שגרם ממן. כספי המשכנתא שוחררו ב-26.3.2019.",
     category: "pre-case",
     importance: "high",
     evidenceIds: ["maman-enforcement-role"],
@@ -115,7 +115,7 @@ export const events: TimelineEvent[] = [
     title: "CONTRACTUAL DELIVERY DATE — שרבט Fails to Deliver",
     titleHe: "מועד המסירה החוזי — שרבט לא מסר",
     detail:
-      "Per §8.1 of the purchase contract, March 1, 2019 is the agreed delivery date. שרבט does not deliver. Building water infrastructure was only completed this same month (per שרבט's own court filing in ת\"א 60392-01-20, para. 13) — confirming basic infrastructure was not ready at the promised date.",
+      "לפי סעיף 8.1 בחוזה הרכישה, 1.3.2019 הוא מועד המסירה המוסכם. שרבט לא מסר. תשתית המים של הבניין הושלמה רק באותו החודש (לפי הגשת שרבט עצמו בת\"א 60392-01-20, פרה. 13) — מה שמאשר כי תשתית בסיסית לא הייתה מוכנה במועד המובטח.",
     category: "delivery",
     importance: "critical",
     evidenceIds: ["delivery-delay", "water-march-2019"],
@@ -128,7 +128,7 @@ export const events: TimelineEvent[] = [
     title: "ממן Sends Demand Letter to Victor Levi (Infrastructure Dispute)",
     titleHe: "ממן שולח מכתב איום לוויקטור לוי — סכסוך תשתיות",
     detail:
-      "ממן acts as שרבט's commercial enforcement agent in an infrastructure dispute against Victor Levi (utility company). This is not courtroom advocacy — this is an attorney using threatening letters to resolve a building contractor dispute. The same tactic would later be used against Ron (Jan 18, 2021 mirror-letter). Filed by שרבט himself as נספח 18 pp.46-47 and confirmed in ת\"א 60392-01-20 para. 18.",
+      "ממן משמש סוכן אכיפה מסחרי של שרבט בסכסוך תשתיות כנגד ויקטור לוי (ספקית חשמל). אין מדובר בייצוג בבית משפט — עורך דין המשתמש במכתבי איום לפתרון סכסוך קבלן בניין. אותה טקטיקה תופעל כנגד רון במכתב המירור מ-18.1.2021. הוגש על ידי שרבט עצמו כנספח 18 עמ' 46-47 ומאושר בת\"א 60392-01-20 פרה. 18.",
     category: "pre-case",
     importance: "critical",
     evidenceIds: ["maman-victor-levi", "ta-60392-01-20"],
@@ -141,7 +141,7 @@ export const events: TimelineEvent[] = [
     title: "First Defect Inspection — Report 1729 (Architect נירה גורוביץ')",
     titleHe: "בדיקת ליקויים ראשונה — דוח 1729 (אדריכלית נירה גורוביץ')",
     detail:
-      "Pre-possession inspection: paint/plaster, tiling, aluminum, plumbing (missing sprinklers), electrical defects all documented. Report provided to שרבט. No remedial action taken.",
+      "בדיקה לפני קבלת חזקה: ליקויי צבע וטיח, ריצוף, אלומיניום, אינסטלציה (ספרינקלרים חסרים), חשמל — כולם מתועדים. הדו\"ח הועבר לשרבט. לא ננקטה פעולת תיקון.",
     category: "pre-case",
     importance: "high",
     evidenceIds: [],
@@ -154,7 +154,7 @@ export const events: TimelineEvent[] = [
     title: "Case 1 Filed — ת\"א 70677-12-19 (Temporary Injunction)",
     titleHe: "תביעה 1 — בקשה לסעד זמני",
     detail:
-      "BH Law (פלג שחם-איילון) files Case 1 on Ron's behalf. Court: בית המשפט השלום פתח תקווה, Judge עדנה יוסף-קוזין. Claims: delivery delay, construction defects.",
+      "משרד BH Law (פלג שחם-איילון) מגיש תביעה 1 בשם רון. בית משפט: שלום פתח תקווה, שופטת עדנה יוסף-קוזין. עילות: עיכוב מסירה, ליקויי בניה.",
     category: "case1",
     importance: "critical",
     evidenceIds: [],
@@ -167,7 +167,7 @@ export const events: TimelineEvent[] = [
     title: "₪167,000 Court Deposit (עיקול עצמי — Case 1 Opening)",
     titleHe: "פיקדון ₪167,000 בבית משפט (עיקול עצמי — פתיחת תיק 1)",
     detail:
-      "Ron deposits ₪167,000 into court escrow as security (עיקול עצמי) to open Case 1. Additional deposits follow: ₪20,000 (Mar 2, 2020), ₪17,000 and ₪67,000 (Jan 27, 2021). Total deposited: ₪271,000.",
+      "רון מפקיד ₪167,000 בנאמנות בית משפט (עיקול עצמי) לפתיחת תיק 1. פיקדונות נוספים: ₪20,000 (2.3.2020), ₪17,000 ו-₪67,000 (27.1.2021). סה\"כ שהופקד: ₪271,000.",
     category: "case1",
     importance: "high",
     evidenceIds: ["deposit-ledger"],
@@ -180,7 +180,7 @@ export const events: TimelineEvent[] = [
     title: "Occupancy Certificate Issued — 21 Months After Contractual Date",
     titleHe: "תעודת גמר — 21 חודשים אחרי המועד החוזי",
     detail:
-      "שרבט obtains the occupancy certificate on December 3, 2020. This is 21 months and 2 days after the March 1, 2019 contractual delivery date — the starting point of the Case 1 delay calculation.",
+      "שרבט מקבל תעודת גמר ב-3.12.2020. זהו 21 חודשים ו-2 ימים לאחר מועד המסירה החוזי 1.3.2019 — נקודת המוצא לחישוב עיכוב תיק 1.",
     category: "delivery",
     importance: "critical",
     evidenceIds: ["delivery-delay"],
@@ -193,7 +193,7 @@ export const events: TimelineEvent[] = [
     title: "₪179,000 Payment to ממן — Including ₪30,000 'Electricity Connection'",
     titleHe: "₪179,000 לחשבון ממן — כולל ₪30,000 'הוצאות חיבור חשמל'",
     detail:
-      "Three days after the occupancy certificate, ₪179,000 flows from the penthouse sale proceeds (ירון וחנה חרמש) to עו\"ד יאיר נאור ממן's account. Breakdown: ₪30,000 for 'electricity connection expenses' (הוצאות חיבור חשמל), ₪4,000 water system, ₪145,000 resident obligations. Ron's apartment has no working electricity at this time — proven by the Nov 2021 WhatsApp exchange (נספח 15, also filed by שרבט himself).",
+      "שלושה ימים לאחר תעודת האיכלוס, ₪179,000 מתמורת מכירת הפנטהאוז (ירון וחנה חרמש) זורמים לחשבון עו\"ד יאיר נאור ממן. פירוט: ₪30,000 עבור 'הוצאות חיבור חשמל', ₪4,000 מערכת מים, ₪145,000 התחייבויות דיירים. לדירת רון אין חשמל פעיל בשלב זה — מוכח על ידי חילופי WhatsApp מנובמבר 2021 (נספח 15, הוגש על ידי שרבט עצמו).",
     category: "electricity",
     importance: "critical",
     evidenceIds: ["maman-179k", "electricity-no-connection"],
@@ -206,7 +206,7 @@ export const events: TimelineEvent[] = [
     title: "Gaya Engineering Inspection — Apartment Not Connected to Electricity",
     titleHe: "בדיקת גאיה הנדסה — הדירה לא מחוברת לחשמל",
     detail:
-      "Two days after the ₪179K payment to ממן. Gaya Engineering inspects Apt 11: electrical section not properly completed; apartment not connected to electricity. The ₪30,000 designated for electricity connection has already gone to ממן's account. It did not reach the apartment.",
+      "יומיים לאחר תשלום ₪179,000 לממן. גאיה הנדסה בודקת דירה 11: פרק החשמל לא הושלם כראוי; הדירה אינה מחוברת לחשמל. ₪30,000 שיועדו לחיבור חשמל כבר הועברו לחשבון ממן. הם לא הגיעו לדירה.",
     category: "electricity",
     importance: "critical",
     evidenceIds: ["maman-179k", "electricity-no-connection"],
@@ -219,7 +219,7 @@ export const events: TimelineEvent[] = [
     title: "ממן's Mirror-Letter — Threatening Contract Cancellation",
     titleHe: "מכתב מירור של ממן — איום בביטול חוזה",
     detail:
-      "43 days after receiving ₪179,000 in building funds, ממן sends the most aggressive legal threat of the pre-litigation period: a formal letter to BH Law threatening to cancel Ron's purchase contract. This is the same threatening-letter tactic deployed against Victor Levi in 2019. ממן is simultaneously holding building funds and threatening the buyer he is notionally adverse to.",
+      "43 ימים לאחר קבלת ₪179,000 מכספי הבניין, ממן שולח את האיום המשפטי האגרסיבי ביותר בתקופה שלפני ההתדיינות: מכתב רשמי למשרד BH Law המאיים בביטול חוזה הרכישה של רון. זוהי אותה טקטיקה של מכתבי איום שיושמה כנגד ויקטור לוי ב-2019. ממן מחזיק בו זמנית כספי בניין ומאיים על הקונה.",
     category: "case1",
     importance: "critical",
     evidenceIds: ["maman-mirror-letter-ev", "maman-enforcement-role"],
@@ -232,7 +232,7 @@ export const events: TimelineEvent[] = [
     title: "Actual Possession Transfer — 23 Months After Contractual Date",
     titleHe: "מסירת חזקה בפועל — 23 חודשים אחרי המועד החוזי",
     detail:
-      "Ron takes possession of Apt 11 on February 2, 2021 — 23 months after the March 1, 2019 contractual delivery date. Electricity is still not connected. Storage unit מחסן 10 (per contract) is not delivered — Ron will later receive מחסן 11, a different unit.",
+      "רון מקבל חזקה על דירה 11 ב-2.2.2021 — 23 חודשים לאחר מועד המסירה החוזי 1.3.2019. חשמל עדיין אינו מחובר. מחסן 10 (לפי החוזה) לא נמסר — רון יקבל בהמשך מחסן 11, יחידה שונה.",
     category: "delivery",
     importance: "critical",
     evidenceIds: ["delivery-delay", "storage-wrong-unit"],
@@ -245,7 +245,7 @@ export const events: TimelineEvent[] = [
     title: "Court Seizure Registered on SHBN's Tabu Note (שטר 17267/2021/1)",
     titleHe: "עיקול בית משפט נרשם בטאבו — שטר 17267/2021/1",
     detail:
-      "A court seizure is registered on the Tabu note for the building — confirms active litigation. As of this date, Ron holds only הערת אזהרה (warning note, registered Oct 2018). Full Tabu ownership (תת-חלקה) has still not been registered in Ron's name — 2.5 years after the promised delivery date.",
+      "עיקול בית משפט נרשם בנסח הטאבו של הבניין — מאשר קיום הליך משפטי פעיל. נכון לתאריך זה, רון מחזיק רק הערת אזהרה (נרשמה אוקטובר 2018). בעלות מלאה בטאבו (תת-חלקה) עדיין לא נרשמה על שמו — שנתיים וחצי לאחר מועד המסירה המובטח.",
     category: "case1",
     importance: "high",
     evidenceIds: ["tabu-gap"],
@@ -258,7 +258,7 @@ export const events: TimelineEvent[] = [
     title: "WhatsApp: No Electricity — Ron Asks for Contract Number to Connect",
     titleHe: "וואטסאפ: אין חשמל — רון מבקש מספר הזמנה לחיבור",
     detail:
-      'November 14: Ron requests the order/contract number needed to open a חברת חשמל contract: "אני צריך בבקשה מספר הזמנה או אוביייקט כדי לפתוח חוזה מול חברת חשמל." November 15: Sharbat\'s team (Iris) confirms they do not have the number. November 18: electrician reports back: "דיברנו עם חברת חשמל, הם מבקשים מכתב שאומר שהדירה נמסרה ושאתם לשרים לחבר אותה לחשמל עם חותמת החברה של sbh" — חברת חשמל requires an sbh-stamped authorization letter. שרבט has not provided it. 9 months post-possession, no electricity. This exchange was filed by שרבט himself as נספח 15 in his Case 1 defense.',
+      "14 בנובמבר: רון מבקש את מספר ההזמנה הנדרש לפתיחת חוזה מול חברת חשמל: 'אני צריך בבקשה מספר הזמנה או אוביייקט כדי לפתוח חוזה מול חברת חשמל'. 15 בנובמבר: צוות שרבט (אירית) מאשר שאין ברשותם את המספר. 18 בנובמבר: החשמלאי מדווח: 'דיברנו עם חברת חשמל, הם מבקשים מכתב שאומר שהדירה נמסרה ושאתם לשרים לחבר אותה לחשמל עם חותמת החברה של sbh' — חברת חשמל דורשת מכתב הרשאה חתום sbh. שרבט לא סיפק אותו. 9 חודשים לאחר קבלת החזקה, עדיין ללא חשמל. חילופי הודעות אלה הוגשו על ידי שרבט עצמו כנספח 15 בהגנתו בתיק 1.",
     category: "electricity",
     importance: "critical",
     evidenceIds: ["electricity-no-connection"],
@@ -271,7 +271,7 @@ export const events: TimelineEvent[] = [
     title: "שרבט Files Defense Exhibits Under Oath — 20 Exhibits Including Party Admissions",
     titleHe: "שרבט מגיש נספחים תחת שבועה — 20 נספחים",
     detail:
-      "שרבט files his Case 1 defense (תצהיר עדות ראשית) with 20 exhibits. Filed under oath. These include: נספח 3 (₪179K ממן payment), נספח 15 (Nov 2021 no-electricity WhatsApp), נספח 18 (Goldenberg salary transfer + Victor Levi letter + ת\"א 60392-01-20 infrastructure lawsuit). By filing these exhibits in his own defense, שרבט created party admissions that are now the primary evidence in Case 2.",
+      "שרבט מגיש את הגנת תיק 1 (תצהיר עדות ראשית) עם 20 נספחים, תחת שבועה. כוללים: נספח 3 (תשלום ₪179,000 לממן), נספח 15 (WhatsApp ללא חשמל נובמבר 2021), נספח 18 (העברת משכורת לגולדנברג + מכתב ויקטור לוי + תביעת תשתיות ת\"א 60392-01-20). על ידי הגשת נספחים אלה בהגנתו, שרבט יצר הודאות בעל דין שהן כיום הראיות הראשיות בתיק 2.",
     category: "case1",
     importance: "critical",
     evidenceIds: ["maman-179k", "electricity-no-connection", "goldenberg-salary", "maman-victor-levi"],
@@ -284,7 +284,7 @@ export const events: TimelineEvent[] = [
     title: "ע.ק Expert Report — Active Moisture in 4 Zones, Sub-floor Failure",
     titleHe: "חוות דעת מומחה ע.ק — רטיבות פעילה ב-4 אזורים, כשל ריצוף",
     detail:
-      "ע.ק איתור נזילות expert report confirms ongoing moisture damage in Apt 11: 4 active moisture zones, sub-floor waterproofing failure in Apt 14 causing ceiling damage in Apt 11. שרבט knew about moisture since January 2019 (admitted in Steinert v. Sharbat). The damage is ongoing and unresolved as of January 2025.",
+      "דו\"ח מומחה ע.ק איתור נזילות מאשר נזקי רטיבות מתמשכים בדירה 11: 4 אזורי רטיבות פעילה, כשל איטום תת-רצפתי בדירה 14 הגורם לנזקי תקרה בדירה 11. שרבט ידע על הרטיבות מינואר 2019 (הודה בשטיינר נ. שרבט). הנזק מתמשך ולא נפתר נכון לינואר 2025.",
     category: "case2",
     importance: "high",
     evidenceIds: ["moisture-damage"],
@@ -297,7 +297,7 @@ export const events: TimelineEvent[] = [
     title: "Case 1 Verdict — ₪223,413 Delay Compensation + ₪20,000 Attorney Fees",
     titleHe: "פסק דין — ₪223,413 פיצוי איחור + ₪20,000 שכ\"ט",
     detail:
-      "Judge עדנה יוסף-קוזין (בית המשפט השלום פתח תקווה) awards: ₪223,413 delay compensation (21 months + 28 days, March 1, 2019 → Dec 28, 2020, at ₪6,800/month appraiser rate). ₪20,000 attorney fees. Non-monetary damages (₪20,000 claimed): dismissed. Court fees: refunded. Paid from the ₪271,000 court deposits. Surplus ~₪27,587 was claimed by שרבט via ₪186K counter-claim.",
+      "השופטת עדנה יוסף-קוזין (שלום פתח תקווה) פוסקת: ₪223,413 פיצויי עיכוב (21 חודשים + 28 ימים, מ-1.3.2019 עד 28.12.2020, בשיעור ₪6,800 לחודש לפי שמאי). ₪20,000 שכ\"ט. תביעה לנזק לא ממוני (₪20,000 נתבע): נדחתה. אגרת משפט: הוחזרה. שולם מפיקדונות ₪271,000. עודף ~₪27,587 נתבע על ידי שרבט בתביעת נגד ₪186,000.",
     category: "verdict",
     importance: "critical",
     evidenceIds: ["verdict-amounts", "deposit-ledger"],
@@ -310,7 +310,7 @@ export const events: TimelineEvent[] = [
     title: "Apartment Sale to Ben-Hamo — 2 Days After Verdict",
     titleHe: "מכירת הדירה לבן-המו — יומיים אחרי פסק הדין",
     detail:
-      "Ron sells Apt 11 to Ben-Hamo buyers, two days after the Case 1 verdict. ממן holds a power of attorney from שרבט that extends to Tabu registrations — he remains a gatekeeper over the property transfer. שרבט simultaneously says he will not cooperate with the sale until accounting is resolved.",
+      "רון מוכר את דירה 11 לרוכשי בן-חמו, יומיים לאחר פסיקת תיק 1. ממן מחזיק בייפוי כוח מאת שרבט המתפרש על רישומי טאבו — הוא נותר שומר סף בהעברת הנכס. שרבט מצהיר כי לא ישתף פעולה עם המכירה עד לסיום ההתחשבנות.",
     category: "verdict",
     importance: "high",
     evidenceIds: ["tabu-gap"],
@@ -323,7 +323,7 @@ export const events: TimelineEvent[] = [
     title: "ממן Signs הערת אזהרה via POA — Post-Verdict Gatekeeper Role",
     titleHe: "ממן חותם על הערת אזהרה באמצעות יפוי כוח — שומר סף לאחר פסק הדין",
     detail:
-      "Three days after the apartment sale, Nave Law (מורין סוטיל) asks ממן to sign the הערת אזהרה registration form using his power of attorney from שרבט, to facilitate Tabu registration for the Ben-Hamo buyers. ממן held the power of attorney — confirming his ongoing operational role even after Case 1 closed.",
+      "שלושה ימים לאחר מכירת הדירה, משרד נוה (מורין סוטיל) מבקש מממן לחתום על טופס רישום הערת אזהרה באמצעות ייפוי הכוח שברשותו מאת שרבט, לסייע ברישום הטאבו עבור רוכשי בן-חמו. ממן החזיק את ייפוי הכוח — מאשר את תפקידו המבצעי המתמשך גם לאחר סגירת תיק 1.",
     category: "verdict",
     importance: "high",
     evidenceIds: ["maman-enforcement-role"],
@@ -336,7 +336,7 @@ export const events: TimelineEvent[] = [
     title: "שרבט's ₪186,000 Counter-Claim — Will Block Sale Until Resolved",
     titleHe: "תביעה נגדית של שרבט ₪186,000 — יחסום את המכירה עד הסדרה",
     detail:
-      "שרבט claims Ron owes HIM ₪186,000 with 'exceptional interest' (רבית חריגה). Spreadsheet: 'התחשבנות רון קמחי (2) (6) (1).xlsx.' His position: will not cooperate with Tabu registration for the apartment sale until this counter-accounting is resolved. BH Law (פלג) prepares a formal response (Dec 29, 2024).",
+      "שרבט טוען כי רון חייב לו ₪186,000 ב'ריבית חריגה'. גיליון: 'התחשבנות רון קמחי (2) (6) (1).xlsx'. עמדתו: לא ישתף פעולה עם רישום הטאבו לצורך מכירת הדירה עד לפתרון תביעת הנגד. משרד BH Law (פלג) מכין תגובה רשמית (29.12.2024).",
     category: "verdict",
     importance: "high",
     evidenceIds: ["deposit-ledger"],
@@ -349,7 +349,7 @@ export const events: TimelineEvent[] = [
     title: "Case 2 Filed — ת\"א 24371-05-25 (Ongoing)",
     titleHe: "תביעה 2 — ת\"א 24371-05-25",
     detail:
-      "Nave Law (נוה גור + מורין סוטיל + אילן גרבר) files Case 2 on Ron's behalf. Court: בית המשפט השלום הרצלייה, Judge יעל מרמור דומב. The claim centers on ממן's conduct: financial entanglement with the building project while acting as Sharbat's attorney against Ron, constituting a breach of fiduciary duty under §54-62, חוק לשכת עורכי הדין. Five drafts refined the complaint between March-May 2025.",
+      "משרד נוה (נוה גור + מורין סוטיל + אילן גרבר) מגיש תביעה 2 בשם רון. בית משפט: שלום הרצליה, שופטת יעל מרמור דומב. התביעה מתמקדת בהתנהלות ממן: שזירות כספית עם פרויקט הבניין תוך פעולה כעורך דינו של שרבט כנגד רון, המהווה הפרת חובת נאמנות לפי סעיפים 54-62 לחוק לשכת עורכי הדין. חמישה טיוטות שכללו את כתב התביעה בין מרץ-מאי 2025.",
     category: "case2",
     importance: "critical",
     evidenceIds: ["maman-179k", "electricity-no-connection", "maman-enforcement-role"],
@@ -362,7 +362,7 @@ export const events: TimelineEvent[] = [
     title: "Defense Files כתב הגנה in Case 2 (ממן Representing שרבט)",
     titleHe: "ממן מגיש כתב הגנה בתביעה 2 — בשמו של שרבט",
     detail:
-      "ממן files the Case 2 defense on behalf of שרבט. ממן — the attorney whose conduct is the subject of Case 2 — is simultaneously writing the defense. This reinforces the conflict-of-interest argument.",
+      "ממן מגיש את הגנת תיק 2 בשם שרבט. ממן — עורך הדין שהתנהלותו היא נושא תיק 2 — כותב בו זמנית את ההגנה. זה מחזק את טענת ניגוד העניינים.",
     category: "case2",
     importance: "high",
     evidenceIds: ["maman-enforcement-role"],
@@ -375,7 +375,7 @@ export const events: TimelineEvent[] = [
     title: "First קדם משפט — Judge יעל מרמור דומב",
     titleHe: "קדם משפט ראשון — שופטת יעל מרמור דומב",
     detail:
-      "First pre-trial hearing in Case 2. Judge מרמור דומב presides. Nave Law leads. Further hearings: Dec 1-2, 2025 (motion to accelerate). May 14, 2026 (קדם משפט — procedural only, postponed to Oct 4, 2026).",
+      "קדם המשפט הראשון בתיק 2. יושבת בראש: שופטת מרמור דומב. מוביל: משרד נוה. דיונים נוספים: 1-2.12.2025 (בקשה להאצה). 14.5.2026 (קדם משפט — פרוצדורלי בלבד, נדחה ל-4.10.2026).",
     category: "case2",
     importance: "high",
     evidenceIds: [],
@@ -388,7 +388,7 @@ export const events: TimelineEvent[] = [
     title: "NEXT קדם משפט — All Pre-Hearing Motions Due",
     titleHe: "קדם משפט הבא — כל הבקשות צריכות להיות מוגשות לפני",
     detail:
-      "Next scheduled קדם משפט before Judge יעל מרמור דומב. All pre-hearing motions must be filed before this date, including: (1) admissibility motion for Case 1 exhibits as party admissions, (2) discovery motion for NyM Law financial records, (3) discovery motion for full Tabu history of Apt 11.",
+      "קדם המשפט הבא בפני השופטת יעל מרמור דומב. כל הבקשות טרום הדיון חייבות להיות מוגשות לפני תאריך זה, כולל: (1) בקשת קבילות נספחי תיק 1 כהודאות בעל דין, (2) בקשת גילוי רשומות כספיות של משרד NyM Law, (3) בקשת גילוי היסטוריית טאבו מלאה של דירה 11.",
     category: "case2",
     importance: "critical",
     evidenceIds: [],
