@@ -35,7 +35,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
             תיק ראיות
           </div>
           <div className="text-sm font-medium leading-snug" style={{ color: "var(--text-primary)" }}>
-            {event.title}
+            {event.titleHe ?? event.title}
           </div>
           <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
             {event.dateDisplay}

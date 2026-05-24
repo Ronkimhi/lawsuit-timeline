@@ -71,7 +71,7 @@ export default function Home() {
             ת&quot;א 24371-05-25
           </div>
           <div className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
-            Kimhi v. Sharbat
+            קמחי נ. שרבט
           </div>
           <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
             תיק 2 — פעיל
