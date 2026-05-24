@@ -8,6 +8,7 @@ export interface Evidence {
   strength: EvidenceStrength;
   hebrewQuote?: string;
   notes?: string;
+  fileUrl?: string;
 }
 
 export const evidence: Evidence[] = [
@@ -18,6 +19,7 @@ export const evidence: Evidence[] = [
     source: "נספח 3, pp.129-130 — שרבט's own Case 1 defense exhibit filed under oath (Dec 2021)",
     strength: "STRONG",
     notes: "Highest priority exhibit. Filed by שרבט himself. The ₪30K for electricity went to ממן; Ron had no electricity until at least Nov 2021.",
+    fileUrl: "/docs/nasah-3.pdf",
   },
   {
     id: "electricity-no-connection",
@@ -28,6 +30,7 @@ export const evidence: Evidence[] = [
     hebrewQuote:
       'Nov 14: "אני צריך בבקשה מספר הזמנה או אוביייקט כדי לפתוח חוזה מול חברת חשמל"\nNov 18: "דיברנו עם חברת חשמל, הם מבקשים מכתב שאומר שהדירה נמסרה ושאתם לשרים לחבר אותה לחשמל עם חותמת החברה של sbh"',
     notes: "Verbatim quotes confirmed from Ron's scanned exhibit. Filed by שרבט himself — he cannot deny this evidence.",
+    fileUrl: "/docs/nasah-15.pdf",
   },
   {
     id: "goldenberg-salary",
@@ -36,6 +39,7 @@ export const evidence: Evidence[] = [
     source: "נספח 18, pp.42-43 + ת\"א 60392-01-20 financial table, bundle p.165 — two independent sworn filings",
     strength: "STRONG",
     notes: "שרבט submitted Goldenberg's letter as evidence from an 'independent' witness. The salary transfer destroys that claim. Goldenberg's own letter lists 3 incomplete items.",
+    fileUrl: "/docs/nasah-18.pdf",
   },
   {
     id: "maman-victor-levi",
@@ -46,6 +50,7 @@ export const evidence: Evidence[] = [
     hebrewQuote:
       'ת"א 60392-01-20 para. 18: "פנתה התובעת לח"מ ושכרה את שירותיו וביום 4.8.19 שלח הח"מ לתובעת מכתב"',
     notes: "Two independent sworn documents confirm the same Aug 4, 2019 letter. This is one of the 4 anchor exhibits for the admissibility motion.",
+    fileUrl: "/docs/nasah-18.pdf",
   },
   {
     id: "maman-enforcement-role",
@@ -54,6 +59,7 @@ export const evidence: Evidence[] = [
     source: "נספח 18 — כתב תביעה מתוקן ת\"א 60392-01-20, bundle pp.163-166",
     strength: "STRONG",
     notes: "ממן was simultaneously litigating Case 1 against Ron AND the infrastructure case against יגאל אלון נישה AND receiving ₪179K in building funds. Three concurrent roles = conflict of interest.",
+    fileUrl: "/docs/nasah-18.pdf",
   },
   {
     id: "maman-mirror-letter-ev",
@@ -62,6 +68,7 @@ export const evidence: Evidence[] = [
     source: "נספח 13 (defense exhibits) + email archive",
     strength: "STRONG",
     notes: "The sequence: Dec 6 (₪179K received) → Jan 18 (mirror-letter). ממן held building funds and threatened the buyer simultaneously.",
+    fileUrl: "/docs/nasah-13.pdf",
   },
   {
     id: "delivery-delay",
@@ -70,6 +77,7 @@ export const evidence: Evidence[] = [
     source: "Purchase contract §8.1 (Sale-Documents/Purchase-Agreement/) + Case 1 verdict Oct 26, 2024",
     strength: "STRONG",
     notes: "Confirmed by Case 1 verdict (21 months + 28 days per court calculation from Mar 1, 2019).",
+    fileUrl: "/docs/nasah-10.pdf",
   },
   {
     id: "storage-wrong-unit",
@@ -78,6 +86,7 @@ export const evidence: Evidence[] = [
     source: "Purchase contract Oct 14, 2018 + מחסן - לפני השינוי.jpeg (Sale-Documents/Purchase-Agreement/) + Kagan Jan 2019 letter Point 2 + Ron confirmed 2026-05-24",
     strength: "STRONG",
     notes: "This is a wrong-asset delivery, not a late delivery. שרבט cannot claim he fulfilled the storage obligation by delivering a different unit.",
+    fileUrl: "/docs/nasah-10.pdf",
   },
   {
     id: "parking-discrepancy",
@@ -86,6 +95,7 @@ export const evidence: Evidence[] = [
     source: "2017 Kagan allocation table + 2018 purchase contract (נספחים ג'-ד')",
     strength: "DOCUMENTARY",
     notes: "Lower priority than storage discrepancy. The double-stacker limitations may affect usability and emergency access.",
+    fileUrl: "/docs/nasah-10.pdf",
   },
   {
     id: "tabu-gap",
@@ -94,6 +104,7 @@ export const evidence: Evidence[] = [
     source: "Tabu extract in 02-Attachments/Sale-Documents/",
     strength: "DOCUMENTARY",
     notes: "Q7 (exact registration date) still pending verification from Tabu extract.",
+    fileUrl: "/docs/tabu.pdf",
   },
   {
     id: "moisture-damage",
@@ -102,6 +113,7 @@ export const evidence: Evidence[] = [
     source: "Expert-Reports/ע.ק איתור נזילות - חוות דעת מומחה.pdf + Court-Filings/דיון הוכחות שטיינר נגד שרבט 19.9.21.pdf",
     strength: "STRONG",
     notes: "Steinert v. Sharbat (ת\"א 15343-01-20) is a parallel case in the same building with same judge region.",
+    fileUrl: "/docs/moisture-expert.pdf",
   },
   {
     id: "water-march-2019",
@@ -111,6 +123,7 @@ export const evidence: Evidence[] = [
     strength: "STRONG",
     hebrewQuote: 'פרה. 13: "...חיבור הבניין למים הושלם בחודש מרץ 2019..."',
     notes: "שרבט's own court filing confirms the building was not infrastructure-ready at the promised delivery date.",
+    fileUrl: "/docs/nasah-18.pdf",
   },
   {
     id: "ta-60392-01-20",
@@ -119,6 +132,7 @@ export const evidence: Evidence[] = [
     source: "נספח 18 — כתב תביעה מתוקן ת\"א 60392-01-20, bundle pp.163-166 (Defense-Exhibits-Case1/)",
     strength: "STRONG",
     notes: "This filing was discovered within שרבט's own Case 1 defense exhibits — a party admission.",
+    fileUrl: "/docs/nasah-18.pdf",
   },
   {
     id: "deposit-ledger",
@@ -127,6 +141,7 @@ export const evidence: Evidence[] = [
     source: "Case 1 deposit threads (category: case1-deposits) + פסק דין Oct 26, 2024",
     strength: "STRONG",
     notes: "שרבט's ₪186K counter-claim attempts to absorb this surplus plus claim additional amounts.",
+    fileUrl: "/docs/psak-din.pdf",
   },
   {
     id: "verdict-amounts",
@@ -135,5 +150,6 @@ export const evidence: Evidence[] = [
     source: "פסק דין Oct 26, 2024 — 02-Attachments/PDFs/2024-10-28_תאודור-קמחי - שרבט - פסק דין 26.10.2024.pdf",
     strength: "STRONG",
     notes: "Case 1 is closed. These numbers are final.",
+    fileUrl: "/docs/psak-din.pdf",
   },
 ];

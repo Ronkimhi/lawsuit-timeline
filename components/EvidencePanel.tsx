@@ -124,6 +124,21 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
                     >
                       <span className="font-semibold">מקור:</span> {ev.source}
                     </div>
+                    {ev.fileUrl && (
+                      <a
+                        href={ev.fileUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 mt-3 text-xs px-3 py-1.5 rounded-md font-medium transition-opacity hover:opacity-80"
+                        style={{
+                          background: "rgba(201,168,76,0.15)",
+                          color: "var(--gold-light)",
+                          border: "1px solid rgba(201,168,76,0.3)",
+                        }}
+                      >
+                        פתח מסמך ↗
+                      </a>
+                    )}
                     {ev.hebrewQuote && (
                       <div
                         className="text-xs px-3 py-2 rounded mt-2 leading-relaxed"
