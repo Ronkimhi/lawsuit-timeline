@@ -16,7 +16,7 @@ export default function ChatPanel({ onClose }: Props) {
     {
       role: "assistant",
       content:
-        "I have full access to the case materials for ת\"א 24371-05-25 (Kimhi v. Sharbat, Case 2). Ask me about any event, exhibit, legal argument, or timeline question. I'll cite my sources.",
+        "יש לי גישה מלאה לחומרי התיק ת\"א 24371-05-25 (קמחי נ. שרבט, תביעה 2). שאל אותי על כל אירוע, נספח, טיעון משפטי, או שאלה על ציר הזמן. אצטט מקורות.",
     },
   ]);
   const [input, setInput] = useState("");
@@ -64,7 +64,7 @@ export default function ChatPanel({ onClose }: Props) {
     } catch (err) {
       setMessages([
         ...nextMessages,
-        { role: "assistant", content: "Error reaching the API. Check that ANTHROPIC_API_KEY is set." },
+        { role: "assistant", content: "שגיאה בגישה ל-API. ודא שמפתח ANTHROPIC_API_KEY מוגדר." },
       ]);
       console.error(err);
     } finally {
@@ -81,7 +81,7 @@ export default function ChatPanel({ onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-40 flex items-end justify-end p-4 md:p-6"
+      className="fixed inset-0 z-40 flex items-end justify-start p-4 md:p-6"
       style={{ pointerEvents: "none" }}
     >
       <div
@@ -104,10 +104,10 @@ export default function ChatPanel({ onClose }: Props) {
               className="text-xs font-semibold uppercase tracking-widest mb-0.5"
               style={{ color: "var(--gold)" }}
             >
-              Case AI
+              AI משפטי
             </div>
             <div className="text-sm" style={{ color: "var(--text-secondary)" }}>
-              Ask anything about Kimhi v. Sharbat
+              שאל כל שאלה על קמחי נ. שרבט
             </div>
           </div>
           <button
@@ -126,7 +126,7 @@ export default function ChatPanel({ onClose }: Props) {
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+              className={`flex ${msg.role === "user" ? "justify-start" : "justify-end"}`}
             >
               <div
                 className="max-w-[85%] rounded-xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap"
@@ -168,7 +168,7 @@ export default function ChatPanel({ onClose }: Props) {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about an exhibit, date, or argument... (Enter to send)"
+              placeholder="שאל על נספח, תאריך, או טיעון... (Enter לשליחה)"
               rows={2}
               className="flex-1 resize-none rounded-lg px-3 py-2 text-sm outline-none"
               style={{
@@ -188,11 +188,11 @@ export default function ChatPanel({ onClose }: Props) {
                 cursor: loading || !input.trim() ? "not-allowed" : "pointer",
               }}
             >
-              Send
+              שלח
             </button>
           </div>
           <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
-            Powered by Claude. Answers are grounded in case materials.
+            מופעל על ידי Claude. התשובות מבוססות על חומרי התיק.
           </div>
         </div>
       </div>

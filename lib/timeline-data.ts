@@ -23,13 +23,13 @@ export interface TimelineEvent {
 }
 
 export const CATEGORY_LABELS: Record<EventCategory, string> = {
-  "pre-contract": "Pre-Contract",
-  "pre-case": "Pre-Litigation",
-  "case1": "Case 1",
-  "delivery": "Delivery & Possession",
-  "electricity": "Electricity",
-  "verdict": "Verdict",
-  "case2": "Case 2",
+  "pre-contract": "טרום חוזה",
+  "pre-case": "לפני התביעה",
+  "case1": "תיק 1",
+  "delivery": "מסירה וחזקה",
+  "electricity": "חשמל",
+  "verdict": "פסיקה",
+  "case2": "תיק 2",
 };
 
 export const CATEGORY_COLORS: Record<EventCategory, string> = {

@@ -10,15 +10,15 @@ interface Props {
 }
 
 const STRENGTH_STYLE: Record<Evidence["strength"], { bg: string; text: string; label: string }> = {
-  STRONG: { bg: "rgba(34,197,94,0.15)", text: "#86efac", label: "STRONG — Party Admission" },
-  DOCUMENTARY: { bg: "rgba(59,130,246,0.15)", text: "#93c5fd", label: "DOCUMENTARY" },
-  PENDING: { bg: "rgba(148,163,184,0.1)", text: "#94a3b8", label: "PENDING" },
+  STRONG: { bg: "rgba(34,197,94,0.15)", text: "#86efac", label: "חזק — הודאת בעל דין" },
+  DOCUMENTARY: { bg: "rgba(59,130,246,0.15)", text: "#93c5fd", label: "תיעודי" },
+  PENDING: { bg: "rgba(148,163,184,0.1)", text: "#94a3b8", label: "ממתין לאימות" },
 };
 
 export default function EvidencePanel({ event, evidence, onClose }: Props) {
   return (
     <aside
-      className="flex flex-col border-l overflow-hidden shrink-0"
+      className="flex flex-col border-r overflow-hidden shrink-0"
       style={{
         width: "min(420px, 100vw)",
         borderColor: "var(--navy-border)",
@@ -32,7 +32,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
       >
         <div>
           <div className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: "var(--gold)" }}>
-            Evidence File
+            תיק ראיות
           </div>
           <div className="text-sm font-medium leading-snug" style={{ color: "var(--text-primary)" }}>
             {event.title}
@@ -60,7 +60,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
             className="text-xs font-semibold uppercase tracking-widest mb-2"
             style={{ color: "var(--text-secondary)" }}
           >
-            What Happened
+            מה קרה
           </div>
           <p className="text-sm leading-relaxed" style={{ color: "var(--text-primary)" }}>
             {event.detail}
@@ -83,7 +83,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
               className="text-xs font-semibold uppercase tracking-widest mb-3"
               style={{ color: "var(--text-secondary)" }}
             >
-              Backing Evidence ({evidence.length})
+              ראיות תומכות ({evidence.length})
             </div>
             <div className="flex flex-col gap-4">
               {evidence.map((ev) => {
@@ -119,10 +119,10 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
                       style={{
                         background: "rgba(255,255,255,0.04)",
                         color: "var(--text-secondary)",
-                        borderLeft: "2px solid var(--navy-border)",
+                        borderRight: "2px solid var(--navy-border)",
                       }}
                     >
-                      <span className="font-semibold">Source:</span> {ev.source}
+                      <span className="font-semibold">מקור:</span> {ev.source}
                     </div>
                     {ev.hebrewQuote && (
                       <div
@@ -131,7 +131,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
                         style={{
                           background: "rgba(201,168,76,0.06)",
                           color: "var(--gold-light)",
-                          borderLeft: "2px solid rgba(201,168,76,0.3)",
+                          borderRight: "2px solid rgba(201,168,76,0.3)",
                           fontStyle: "italic",
                           whiteSpace: "pre-line",
                         }}
@@ -161,7 +161,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
               border: "1px solid var(--navy-border)",
             }}
           >
-            No exhibit directly linked to this event. Check the archive for thread {event.threadId ?? "ID"}.
+            לא נמצא נספח ישיר לאירוע זה. בדוק בארכיון שרשור {event.threadId ?? "—"}.
           </div>
         )}
       </div>

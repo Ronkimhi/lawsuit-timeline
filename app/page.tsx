@@ -56,7 +56,7 @@ export default function Home() {
     <div className="flex h-screen overflow-hidden" style={{ background: "var(--navy)" }}>
       {/* Left sidebar */}
       <aside
-        className="hidden md:flex flex-col gap-6 p-6 border-r shrink-0"
+        className="hidden md:flex flex-col gap-6 p-6 border-l shrink-0"
         style={{
           width: 220,
           borderColor: "var(--navy-border)",
@@ -74,7 +74,7 @@ export default function Home() {
             Kimhi v. Sharbat
           </div>
           <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
-            Case 2 — Active
+            תיק 2 — פעיל
           </div>
         </div>
 
@@ -83,14 +83,14 @@ export default function Home() {
             className="text-xs font-semibold uppercase tracking-widest mb-3"
             style={{ color: "var(--text-secondary)" }}
           >
-            Filter by Phase
+            סינון לפי שלב
           </div>
           <div className="flex flex-col gap-2">
             {ALL_CATEGORIES.map((cat) => (
               <button
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className="text-left text-xs px-3 py-2 rounded-md transition-all"
+                className="text-right text-xs px-3 py-2 rounded-md transition-all"
                 style={{
                   background: activeCategories.has(cat)
                     ? "rgba(201,168,76,0.15)"
@@ -114,21 +114,21 @@ export default function Home() {
                 className="inline-block w-2 h-2 rounded-full"
                 style={{ background: "var(--critical)" }}
               />
-              Critical event
+              אירוע קריטי
             </div>
             <div className="flex items-center gap-2 mb-1">
               <span
                 className="inline-block w-2 h-2 rounded-full"
                 style={{ background: "var(--high)" }}
               />
-              High importance
+              חשיבות גבוהה
             </div>
             <div className="flex items-center gap-2">
               <span
                 className="inline-block w-2 h-2 rounded-full"
                 style={{ background: "var(--navy-border)" }}
               />
-              Standard
+              רגיל
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Home() {
         >
           <input
             type="text"
-            placeholder="Search events..."
+            placeholder="חיפוש אירועים..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="flex-1 text-sm px-4 py-2 rounded-md outline-none"
@@ -154,7 +154,7 @@ export default function Home() {
             }}
           />
           <span className="text-xs shrink-0" style={{ color: "var(--text-secondary)" }}>
-            {filteredEvents.length} events
+            {filteredEvents.length} אירועים
           </span>
         </div>
 
@@ -163,7 +163,7 @@ export default function Home() {
           <div className="relative max-w-2xl mx-auto">
             {/* Vertical line */}
             <div
-              className="absolute left-4 top-0 bottom-0 w-px"
+              className="absolute right-4 top-0 bottom-0 w-px"
               style={{ background: "var(--navy-border)" }}
             />
 
@@ -209,7 +209,7 @@ export default function Home() {
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
           <path d="M20 2H4C2.9 2 2 2.9 2 4v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 12H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z" />
         </svg>
-        Ask the Case AI
+        שאל את ה-AI
       </button>
 
       {/* Chat panel */}

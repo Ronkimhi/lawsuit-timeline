@@ -19,7 +19,7 @@ export default function EventCard({ event, isSelected, hasEvidence, onClick }: P
   return (
     <button
       onClick={onClick}
-      className="relative flex gap-4 pl-10 pr-4 py-4 text-left rounded-lg transition-all w-full"
+      className="relative flex gap-4 pr-10 pl-4 py-4 text-right rounded-lg transition-all w-full"
       style={{
         background: isSelected ? "rgba(201,168,76,0.08)" : "transparent",
         border: `1px solid ${isSelected ? "rgba(201,168,76,0.3)" : "transparent"}`,
@@ -27,7 +27,7 @@ export default function EventCard({ event, isSelected, hasEvidence, onClick }: P
     >
       {/* Dot on timeline */}
       <span
-        className="absolute left-[14px] top-5 w-3 h-3 rounded-full shrink-0 ring-2 z-10"
+        className="absolute right-[14px] top-5 w-3 h-3 rounded-full shrink-0 ring-2 z-10"
         style={{
           background: IMPORTANCE_DOT[event.importance],
           outline: `3px solid var(--navy)`,
@@ -54,7 +54,7 @@ export default function EventCard({ event, isSelected, hasEvidence, onClick }: P
                 border: "1px solid rgba(201,168,76,0.3)",
               }}
             >
-              Evidence
+              ראיה
             </span>
           )}
         </div>
