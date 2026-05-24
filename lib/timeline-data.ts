@@ -57,6 +57,19 @@ export const events: TimelineEvent[] = [
     threadId: "physical-file",
   },
   {
+    id: "labor-stop-orders",
+    date: "2018-07-22",
+    dateDisplay: "Jul 22 – Aug 12, 2018",
+    title: "Ministry of Labor — 2 Safety Stop Orders on Construction Site",
+    titleHe: "משרד העבודה — 2 צווי עצירה באתר הבניה (לפני חוזה רון)",
+    detail:
+      "שני צווי עצירה הוצאו לאתר הבניה ברחוב יגאל אלון 24, הרצליה: תיק 333699 (22.7.2018) ותיק 889569 (12.8.2018). קנס בטווח ₪20,000-35,000 כל אחד. המפקח: אייל חכים, משרד העבודה — שכיהן גם כמפקח הפנימי של הפרויקט. שני הצווים הוצאו שלושה חודשים לפני חתימת חוזה הרכישה של רון (14.10.2018). שרבט ידע על הפרות בטיחות פעילות באתר ביום שמכר לרון את הדירה — ולא גילה.",
+    category: "pre-contract",
+    importance: "high",
+    evidenceIds: [],
+    threadId: "physical-file",
+  },
+  {
     id: "purchase-contract",
     date: "2018-10-14",
     dateDisplay: "Oct 14, 2018",
@@ -200,6 +213,19 @@ export const events: TimelineEvent[] = [
     threadId: "physical-file",
   },
   {
+    id: "leshem-delivery-notice",
+    date: "2020-12-07",
+    dateDisplay: "Dec 7, 2020",
+    title: "Asaf Leshem — Delivery Notice: Apartment 'Ready' (Day After ₪179K Payment)",
+    titleHe: "אסף לשם — הודעת מסירה: הדירה 'מוכנה' — יום אחרי העברת ₪179K לממן",
+    detail:
+      "אסף לשם (צוות שרבט) פונה לרון ומודיע שהדירה מוכנה למסירה. יום לאחר שרבט העביר ₪179,000 לחשבון ממן — כולל ₪30,000 לחיבור חשמל. רון שולח את גאיה הנדסה לבדיקה ביום המחרת (8.12.2020) ומתגלים 100+ ליקויים. הרצף: 3.12 תעודת גמר → 6.12 ₪179K לממן → 7.12 הודעת מסירה לרון → 8.12 גאיה מגלה שאין חשמל.",
+    category: "delivery",
+    importance: "critical",
+    evidenceIds: ["maman-179k", "electricity-no-connection"],
+    threadId: "physical-file",
+  },
+  {
     id: "gaya-inspection",
     date: "2020-12-08",
     dateDisplay: "Dec 8, 2020",
@@ -210,6 +236,19 @@ export const events: TimelineEvent[] = [
     category: "electricity",
     importance: "critical",
     evidenceIds: ["maman-179k", "electricity-no-connection"],
+    threadId: "physical-file",
+  },
+  {
+    id: "bh-demand-letter-dec2020",
+    date: "2020-12-20",
+    dateDisplay: "Dec 20, 2020",
+    title: "BH Law Formal Demand — Fix All Defects Before Possession (Jan 3 Deadline)",
+    titleHe: "מכתב דרישה רשמי — BH Law דורש תיקון כל הליקויים לפני המסירה",
+    detail:
+      "פלג שחם-איילון (BH Law) שולח מכתב רשמי ל-ממן עם 20+ ליקויים שחייבים להיתקן לפני מסירת הדירה. תאריך מסירה נקבע: 3.1.2021 בשעה 10:00. המכתב מפנה לדו\"ח גאיה הנדסה (8.12.2020) ולעיכוב של 21+ חודשים מ-1.3.2019. דורש בדיקת רטיבות ללא נוכחות שרבט לפני המסירה. מקשר את שרשרת הראיות: ממן מקבל את המכתב ב-20.12 → 43 ימים לאחר מכן שולח את מכתב המירור המאיים (18.1.2021) — לאחר שכבר קיבל ₪179K.",
+    category: "delivery",
+    importance: "critical",
+    evidenceIds: ["maman-mirror-letter-ev", "electricity-no-connection"],
     threadId: "physical-file",
   },
   {
@@ -249,6 +288,19 @@ export const events: TimelineEvent[] = [
     category: "case1",
     importance: "high",
     evidenceIds: ["tabu-gap"],
+    threadId: "physical-file",
+  },
+  {
+    id: "steinert-hearing",
+    date: "2021-09-19",
+    dateDisplay: "Sep 19, 2021",
+    title: "Steinert v. Sharbat — Sharbat Admits Moisture Known Since Jan 2019, ₪50K-55K Pre-Budgeted Per Apt",
+    titleHe: "שטיינר נ. שרבט — שרבט מודה: ידע על רטיבות מינואר 2019, תקצב ₪50-55K לכל דירה",
+    detail:
+      "דיון הוכחות בת\"א 15343-01-20 (תיק מקביל, אותו בניין, בית משפט שלום הרצליה, שופט גלעד הס). שרבט מודה בגוף הדיון: (1) ידע על בעיות הרטיבות מינואר 2019 — לפני חוזה רון ולפני מועד המסירה המובטח; (2) תקצב ₪50,000-55,000 לתיקונים לכל דירה מראש; (3) כלל הדיירים בתמ\"א 38 קיבלו חזקה בפברואר 2021 — עיכוב מתואם, לא אינדיבידואלי. שופט הס קבע: ליקויי בנייה קבילים בתביעות איחור. ראיה ישירה לתיק 2 — שרבט ידע על הנזקים לפני שמסר לרון.",
+    category: "case2",
+    importance: "critical",
+    evidenceIds: ["moisture-damage"],
     threadId: "physical-file",
   },
   {
@@ -380,6 +432,19 @@ export const events: TimelineEvent[] = [
     importance: "high",
     evidenceIds: [],
     threadId: "physical-file",
+  },
+  {
+    id: "kadam-mishpat-may2026",
+    date: "2026-05-14",
+    dateDisplay: "May 14, 2026",
+    title: "קדם משפט — Procedural Only, Postponed to Oct 4, 2026",
+    titleHe: "קדם משפט 14.5.2026 — פרוצדורלי בלבד, נדחה ל-4.10.2026",
+    detail:
+      "קדם משפט בתיק 2 בפני השופטת יעל מרמור דומב. ישיבה פרוצדורלית בלבד — לא התקבלו החלטות מהותיות. בית המשפט קבע: הדיון הבא יתקיים ב-4.10.2026. כל הבקשות טרום הדיון חייבות להיות מוגשות לפני כן: (1) בקשת קבילות נספחי תיק 1 כהודאות בעל דין; (2) בקשת גילוי רשומות NyM Law; (3) בקשת גילוי אס.איי.בי.אן בנאמנות בע\"מ (ח.פ. 515456150). הכנה אינטנסיבית: 4 ישיבות Zoom (Nave Law + רון + סתיו) בתאריכים 16.4, 30.4, 12.5 ו-13.5.2026.",
+    category: "case2",
+    importance: "critical",
+    evidenceIds: [],
+    threadId: "19e25122de965df9",
   },
   {
     id: "next-hearing",
