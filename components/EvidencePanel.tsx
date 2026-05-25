@@ -43,7 +43,7 @@ export default function EvidencePanel({ event, evidence, onClose }: Props) {
         </div>
         <button
           onClick={onClose}
-          className="shrink-0 p-1 rounded hover:opacity-70 transition-opacity"
+          className="shrink-0 p-1 rounded hover:opacity-70 transition-opacity cursor-pointer"
           style={{ color: "var(--text-secondary)" }}
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

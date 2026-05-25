@@ -91,7 +91,7 @@ export default function Home() {
               <button
                 key={cat}
                 onClick={() => toggleCategory(cat)}
-                className="text-right text-xs px-3 py-2 rounded-md transition-all"
+                className="text-right text-xs px-3 py-2 rounded-md transition-all cursor-pointer"
                 style={{
                   background: activeCategories.has(cat)
                     ? "rgba(201,168,76,0.15)"
@@ -100,6 +100,20 @@ export default function Home() {
                     ? "var(--gold-light)"
                     : "var(--text-secondary)",
                   border: `1px solid ${activeCategories.has(cat) ? "rgba(201,168,76,0.4)" : "transparent"}`,
+                }}
+                onMouseEnter={(e) => {
+                  if (!activeCategories.has(cat)) {
+                    (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.05)";
+                    (e.currentTarget as HTMLButtonElement).style.color = "var(--text-primary)";
+                    (e.currentTarget as HTMLButtonElement).style.border = "1px solid rgba(255,255,255,0.1)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (!activeCategories.has(cat)) {
+                    (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+                    (e.currentTarget as HTMLButtonElement).style.color = "var(--text-secondary)";
+                    (e.currentTarget as HTMLButtonElement).style.border = "1px solid transparent";
+                  }
                 }}
               >
                 {CATEGORY_LABELS[cat]}
@@ -165,10 +179,20 @@ export default function Home() {
           <div className="max-w-2xl mx-auto mb-6">
             <Link
               href="/recommendations"
-              className="flex items-center justify-between gap-4 px-5 py-4 rounded-xl w-full transition-all hover:opacity-90 hover:scale-[1.01]"
+              className="flex items-center justify-between gap-4 px-5 py-4 rounded-xl w-full transition-all cursor-pointer hover:scale-[1.01]"
               style={{
                 background: "rgba(201,168,76,0.1)",
                 border: "1px solid rgba(201,168,76,0.45)",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background = "rgba(201,168,76,0.17)";
+                (e.currentTarget as HTMLAnchorElement).style.border = "1px solid rgba(201,168,76,0.7)";
+                (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 0 16px rgba(201,168,76,0.12)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.background = "rgba(201,168,76,0.1)";
+                (e.currentTarget as HTMLAnchorElement).style.border = "1px solid rgba(201,168,76,0.45)";
+                (e.currentTarget as HTMLAnchorElement).style.boxShadow = "none";
               }}
             >
               <div>
@@ -240,7 +264,7 @@ export default function Home() {
       {/* AI Chat button */}
       <button
         onClick={() => setChatOpen(true)}
-        className="fixed bottom-6 right-6 flex items-center gap-2 px-4 py-3 rounded-full text-sm font-medium shadow-lg transition-all hover:scale-105 z-30"
+        className="fixed bottom-6 right-6 flex items-center gap-2 px-4 py-3 rounded-full text-sm font-medium shadow-lg transition-all hover:scale-105 cursor-pointer z-30"
         style={{
           background: "var(--gold)",
           color: "#0b1929",

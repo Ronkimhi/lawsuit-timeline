@@ -19,10 +19,22 @@ export default function EventCard({ event, isSelected, hasEvidence, onClick }: P
   return (
     <button
       onClick={onClick}
-      className="relative flex gap-4 pr-10 pl-4 py-4 text-right rounded-lg transition-all w-full"
+      className="relative flex gap-4 pr-10 pl-4 py-4 text-right rounded-lg transition-all w-full cursor-pointer group"
       style={{
         background: isSelected ? "rgba(201,168,76,0.08)" : "transparent",
         border: `1px solid ${isSelected ? "rgba(201,168,76,0.3)" : "transparent"}`,
+      }}
+      onMouseEnter={(e) => {
+        if (!isSelected) {
+          (e.currentTarget as HTMLButtonElement).style.background = "rgba(255,255,255,0.03)";
+          (e.currentTarget as HTMLButtonElement).style.border = "1px solid rgba(255,255,255,0.07)";
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (!isSelected) {
+          (e.currentTarget as HTMLButtonElement).style.background = "transparent";
+          (e.currentTarget as HTMLButtonElement).style.border = "1px solid transparent";
+        }
       }}
     >
       {/* Dot on timeline */}

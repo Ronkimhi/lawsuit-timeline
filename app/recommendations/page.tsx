@@ -124,10 +124,18 @@ function SourceRow({ src }: { src: Source }) {
             href={src.file}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold hover:opacity-80 transition-opacity"
-            style={{ color: "var(--gold-light)" }}
+            className="font-semibold underline underline-offset-2 decoration-dotted cursor-pointer transition-all hover:decoration-solid"
+            style={{ color: "var(--gold-light)", textDecorationColor: "rgba(201,168,76,0.5)" }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.color = "#f5d98b";
+              (e.currentTarget as HTMLAnchorElement).style.textDecorationColor = "rgba(201,168,76,1)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.color = "var(--gold-light)";
+              (e.currentTarget as HTMLAnchorElement).style.textDecorationColor = "rgba(201,168,76,0.5)";
+            }}
           >
-            {src.label}
+            {src.label} ↗
           </a>
         ) : (
           <span className="font-semibold" style={{ color: "var(--gold-light)" }}>{src.label}</span>
@@ -199,11 +207,19 @@ export default function RecommendationsPage() {
           </div>
           <Link
             href="/"
-            className="text-xs px-3 py-2 rounded-md transition-opacity hover:opacity-70"
+            className="text-xs px-3 py-2 rounded-md transition-all cursor-pointer font-medium"
             style={{
-              background: "rgba(255,255,255,0.05)",
-              color: "var(--text-secondary)",
-              border: "1px solid var(--navy-border)",
+              background: "rgba(255,255,255,0.07)",
+              color: "var(--text-primary)",
+              border: "1px solid rgba(255,255,255,0.15)",
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.13)";
+              (e.currentTarget as HTMLAnchorElement).style.border = "1px solid rgba(255,255,255,0.25)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.07)";
+              (e.currentTarget as HTMLAnchorElement).style.border = "1px solid rgba(255,255,255,0.15)";
             }}
           >
             ← ציר הזמן
