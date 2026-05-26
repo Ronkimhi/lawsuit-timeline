@@ -6,7 +6,6 @@ import { events, CATEGORY_LABELS, type EventCategory } from "@/lib/timeline-data
 import { evidence } from "@/lib/evidence-data";
 import EventCard from "@/components/EventCard";
 import EvidencePanel from "@/components/EvidencePanel";
-import ChatPanel from "@/components/ChatPanel";
 
 const ALL_CATEGORIES: EventCategory[] = [
   "pre-contract",
@@ -23,7 +22,6 @@ export default function Home() {
   const [activeCategories, setActiveCategories] = useState<Set<EventCategory>>(
     new Set(ALL_CATEGORIES)
   );
-  const [chatOpen, setChatOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
   const selectedEvent = events.find((e) => e.id === selectedEventId) ?? null;
@@ -75,7 +73,7 @@ export default function Home() {
             קמחי נ. שרבט
           </div>
           <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
-            תיק 2 — פעיל
+            תיק 2: פעיל
           </div>
         </div>
 
@@ -176,7 +174,7 @@ export default function Home() {
         {/* Timeline scroll */}
         <div className="flex-1 overflow-y-auto px-4 py-6 md:px-8">
           {/* Nave recommendations banner */}
-          <div className="max-w-2xl mx-auto mb-6">
+          <div className="max-w-2xl mx-auto mb-3">
             <Link
               href="/recommendations"
               className="flex items-center justify-between gap-4 px-5 py-4 rounded-xl w-full transition-all cursor-pointer hover:scale-[1.01]"
@@ -200,13 +198,13 @@ export default function Home() {
                   className="text-xs font-semibold uppercase tracking-widest mb-1"
                   style={{ color: "var(--gold)" }}
                 >
-                  תיק 2 — אסטרטגיה
+                  תיק 2: אסטרטגיה
                 </div>
                 <div className="text-sm font-bold" style={{ color: "var(--gold-light)" }}>
-                  המלצות לנוה גור — 3 בקשות לפני 4.10.2026
+                  המלצות לנוה גור: 4 בקשות לפני 4.10.2026
                 </div>
                 <div className="text-xs mt-1" style={{ color: "var(--text-secondary)" }}>
-                  בקשת קבילות · גילוי NyM Law · גילוי נאמנות מוסתרת
+                  הפקדת ₪25,769 · הוצאה לפועל · בקשת קבילות · גילוי נכסים
                 </div>
               </div>
               <svg
@@ -261,25 +259,6 @@ export default function Home() {
         />
       )}
 
-      {/* AI Chat button */}
-      <button
-        onClick={() => setChatOpen(true)}
-        className="fixed bottom-6 right-6 flex items-center gap-2 px-4 py-3 rounded-full text-sm font-medium shadow-lg transition-all hover:scale-105 cursor-pointer z-30"
-        style={{
-          background: "var(--gold)",
-          color: "#0b1929",
-          display: chatOpen ? "none" : "flex",
-        }}
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
-          <path d="M20 2H4C2.9 2 2 2.9 2 4v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 12H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z" />
-        </svg>
-        שאל את ה-AI
-      </button>
-
-      {/* Chat panel */}
-      {chatOpen && <ChatPanel onClose={() => setChatOpen(false)} />}
     </div>
   );
 }
