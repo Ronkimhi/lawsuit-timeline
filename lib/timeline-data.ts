@@ -92,7 +92,7 @@ export const events: TimelineEvent[] = [
       "התקשורת המשפטית הרשמית הראשונה. קגן דורש רשמית: (1) אישור מועד מסירה, (2) מחסן 10, שנוי במחלוקת מהיום הראשון, (3) פתרון ליקויים מתועדים. משכנתא ₪750,000 נרשמה ב-22.1.2019 (בנק דיסקונט).",
     category: "pre-case",
     importance: "high",
-    evidenceIds: ["storage-wrong-unit"],
+    evidenceIds: ["storage-wrong-unit", "kagan-demand-ev"],
     threadId: "physical-file",
   },
   {
@@ -105,7 +105,7 @@ export const events: TimelineEvent[] = [
       "ממן משיב בשם שרבט 38 במכתב בן 8 נקודות המסיט את כל הדרישות. תיעוד ראשון של ממן כסוכן אכיפה משפטי של שרבט, לפני כל הליך משפטי.",
     category: "pre-case",
     importance: "high",
-    evidenceIds: ["maman-enforcement-role"],
+    evidenceIds: ["maman-enforcement-role", "kagan-demand-ev"],
     threadId: "physical-file",
   },
   {
@@ -144,7 +144,7 @@ export const events: TimelineEvent[] = [
       "ממן שולח מכתב דרישה לחברת ויקטור לוי (ספקית תשתיות) בסכסוך תשתיות הבניין. הוגש על ידי שרבט עצמו כנספח 18 עמ' 48-49 ומאושר בת\"א 60392-01-20 פרה. 18.",
     category: "pre-case",
     importance: "critical",
-    evidenceIds: ["maman-victor-levi", "ta-60392-01-20"],
+    evidenceIds: ["maman-victor-levi", "ta-60392-01-20", "nasah-4-ev"],
     threadId: "physical-file",
   },
   {
@@ -196,7 +196,7 @@ export const events: TimelineEvent[] = [
       "שרבט מקבל תעודת גמר ב-3.12.2020. זהו 21 חודשים ו-2 ימים לאחר מועד המסירה החוזי 1.3.2019, נקודת המוצא לחישוב עיכוב תיק 1.",
     category: "delivery",
     importance: "critical",
-    evidenceIds: ["delivery-delay"],
+    evidenceIds: ["delivery-delay", "nasah-17-ev"],
     threadId: "physical-file",
   },
   {
@@ -235,7 +235,7 @@ export const events: TimelineEvent[] = [
       "יומיים לאחר תשלום ₪179,000 לממן. גאיה הנדסה בודקת דירה 11: פרק החשמל לא הושלם כראוי; הדירה אינה מחוברת לחשמל. 100+ ליקויים מתועדים בדו\"ח.",
     category: "electricity",
     importance: "critical",
-    evidenceIds: ["maman-179k", "electricity-no-connection"],
+    evidenceIds: ["maman-179k", "electricity-no-connection", "nasah-4-ev"],
     threadId: "physical-file",
   },
   {
@@ -248,7 +248,7 @@ export const events: TimelineEvent[] = [
       "פלג שחם-איילון (BH Law) שולח מכתב רשמי ל-ממן עם 20+ ליקויים שחייבים להיתקן לפני מסירת הדירה. תאריך מסירה נקבע: 3.1.2021 בשעה 10:00. המכתב מפנה לדו\"ח גאיה הנדסה (8.12.2020) ולעיכוב של 21+ חודשים מ-1.3.2019. דורש בדיקת רטיבות ללא נוכחות שרבט לפני המסירה. מקשר את שרשרת הראיות: ממן מקבל את המכתב ב-20.12 → 43 ימים לאחר מכן שולח את מכתב המירור המאיים (18.1.2021), לאחר שכבר קיבל ₪179K.",
     category: "delivery",
     importance: "critical",
-    evidenceIds: ["maman-mirror-letter-ev", "electricity-no-connection"],
+    evidenceIds: ["maman-mirror-letter-ev", "electricity-no-connection", "nasah-12-ev"],
     threadId: "physical-file",
   },
   {
@@ -300,7 +300,7 @@ export const events: TimelineEvent[] = [
       "דיון הוכחות בת\"א 15343-01-20 (תיק מקביל, אותו בניין, בית משפט שלום הרצליה, שופט גלעד הס). שרבט מודה בגוף הדיון: (1) ידע על בעיות הרטיבות מינואר 2019, לפני חוזה רון ולפני מועד המסירה המובטח; (2) תקצב ₪50,000-55,000 לתיקונים לכל דירה מראש; (3) כלל הדיירים בתמ\"א 38 קיבלו חזקה בפברואר 2021, עיכוב מתואם, לא אינדיבידואלי. שופט הס קבע: ליקויי בנייה קבילים בתביעות איחור. ראיה ישירה לתיק 2: שרבט ידע על הנזקים לפני שמסר לרון.",
     category: "case2",
     importance: "critical",
-    evidenceIds: ["moisture-damage"],
+    evidenceIds: ["moisture-damage", "steinert-protocol-ev"],
     threadId: "physical-file",
   },
   {
@@ -365,7 +365,7 @@ export const events: TimelineEvent[] = [
       "רון מוכר את דירה 11 לרוכשי בן-חמו, יומיים לאחר פסיקת תיק 1. ממן מחזיק בייפוי כוח מאת שרבט המתפרש על רישומי טאבו, ונותר שומר סף בהעברת הנכס. שרבט מצהיר כי לא ישתף פעולה עם המכירה עד לסיום ההתחשבנות.",
     category: "verdict",
     importance: "high",
-    evidenceIds: ["tabu-gap"],
+    evidenceIds: ["tabu-gap", "ben-hamo-sale-ev"],
     threadId: "19339809441ce49a",
   },
   {
@@ -443,7 +443,7 @@ export const events: TimelineEvent[] = [
       "משרד נוה (נוה גור + מורין סוטיל + אילן גרבר) מגיש תביעה 2 בשם רון. בית משפט: שלום הרצליה, שופטת יעל מרמור דומב. שלוש עילות תביעה כנגד שרבט: (1) אי-רישום בית משותף וקביעת תת-חלקה תוך 36 חודש מתעודת הגמר, לפי סעיף 12.7 בחוזה (₪100,000); (2) סירוב שרבט לשתף פעולה עם מכירת הדירה לבן-חמו, מניעת תום לב על בסיס טענת חוב שנסתרה לחלוטין (אובדן פטור ממס שבח ₪102,850 + הוצאות משפטיות ₪87,318); (3) ליקויי בנייה ורטיבות פעילה (₪100,000). סה\"כ הנתבע: ₪390,168. חמישה טיוטות שכללו את כתב התביעה בין מרץ-מאי 2025.",
     category: "case2",
     importance: "critical",
-    evidenceIds: ["maman-179k", "electricity-no-connection", "maman-enforcement-role"],
+    evidenceIds: ["maman-179k", "electricity-no-connection", "maman-enforcement-role", "ktav-tvia-case2"],
     threadId: "196beed93fe485b6",
   },
   {
@@ -456,7 +456,7 @@ export const events: TimelineEvent[] = [
       "שרבט מגיש את הגנת תיק 2 בעצמו, ללא ייצוג עורך דין. ממן אינו מעורב בהגשה זו. שרבט מייצג את עצמו ומגיש 7 טענות הגנה, בהן טענת ₪234K חוב שנסתרה לחלוטין על ידי ₪271K עיקול עצמי, ותביעת נגד ₪186K שגלית ניתחה ודחתה. נספח ה של כתב ההגנה: התכתבות מאיימת שרבט עם נוה גור ('דגי רקק', דצמבר 2024), שהפכה לראיה לחובתו.",
     category: "case2",
     importance: "high",
-    evidenceIds: ["maman-enforcement-role"],
+    evidenceIds: ["maman-enforcement-role", "ktav-hagana-case2-ev"],
     threadId: "physical-file",
   },
   {
@@ -482,7 +482,7 @@ export const events: TimelineEvent[] = [
       "קדם משפט בתיק 2 בפני השופטת יעל מרמור דומב. רון וסתיו השתתפו בזום; שרבט לא התייצב. בית המשפט סבר שכנראה לא קיבל זימון כדין ממזכירות. הדיון נדחה ל-4.10.2026 (שעה 14:00). נוה גור הודיע לשרבט בנפרד (דוא\"ל + שיחה טלפונית) ואישר קבלה. חשוב: השופטת ציינה הסתייגויות ממספר טענות בכתב התביעה, בפרט (א) הטענה לחוב לכאורה של התובעים כלפי הנתבעת; (ב) נזקי מס שבח, לא נוסחו בבהירות מספקת. תגובת נוה גור: טיוטת בקשה להגיש כתב תשובה + הפקדת ₪25,769 (24.5.2026).",
     category: "case2",
     importance: "critical",
-    evidenceIds: [],
+    evidenceIds: ["court-decision-may2026-ev"],
     threadId: "19e25122de965df9",
   },
   {
