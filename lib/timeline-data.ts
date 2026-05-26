@@ -170,7 +170,7 @@ export const events: TimelineEvent[] = [
       "משרד BH Law (פלג שחם-איילון) מגיש תביעה 1 בשם רון. בית משפט: שלום פתח תקווה, שופטת עדנה יוסף-קוזין. עילות: עיכוב מסירה, ליקויי בניה.",
     category: "case1",
     importance: "critical",
-    evidenceIds: [],
+    evidenceIds: ["ktav-tvia-case1"],
     threadId: "16f18f61837e1102",
   },
   {
