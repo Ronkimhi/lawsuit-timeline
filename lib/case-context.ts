@@ -18,7 +18,7 @@ Case 2 (ACTIVE): ת"א 24371-05-25, בית המשפט השלום הרצלייה,
 - Plaintiffs' counsel: נוה גור + מורין סוטיל + אילן גרבר (Nave Law, nave-law.co.il)
 - Filed: May 11, 2025. Defense filed: June 3, 2025.
 - Next hearing: October 4, 2026 (all pre-hearing motions due before this date).
-- ממן is NOT a co-defendant in Case 2. He is the subject of the claim but only שרבט is named.
+- ממן is NOT a defendant in Case 2. He appears only as שרבט's factual agent (contacted about Tabu documents, raised the "debt" claim on שרבט's behalf).
 
 ---
 
